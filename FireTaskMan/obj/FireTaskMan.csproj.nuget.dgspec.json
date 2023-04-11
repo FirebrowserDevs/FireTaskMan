@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\FireTaskMan.csproj": {}
+    "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\FireTaskMan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\FireTaskMan.csproj": {
+    "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\FireTaskMan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\FireTaskMan.csproj",
+        "projectUniqueName": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\FireTaskMan.csproj",
         "projectName": "FireTaskMan",
-        "projectPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\FireTaskMan.csproj",
+        "projectPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\FireTaskMan.csproj",
         "packagesPath": "C:\\Users\\jpjm-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\obj\\",
+        "outputPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -56,6 +56,10 @@
             "System.Diagnostics.PerformanceCounter": {
               "target": "Package",
               "version": "[8.0.0-preview.2.23128.3, )"
+            },
+            "System.Management": {
+              "target": "Package",
+              "version": "[7.0.1, )"
             }
           },
           "imports": [

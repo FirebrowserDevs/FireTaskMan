@@ -29,6 +29,7 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.3.230228005-preview1" />
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.25336-preview" />
     <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="8.0.0-preview.2.23128.3" />
+    <PackageReference Include="System.Management" Version="7.0.1" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
 
@@ -42,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Update="Icons\cpu.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Icons\gpu.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Icons\mem.png">

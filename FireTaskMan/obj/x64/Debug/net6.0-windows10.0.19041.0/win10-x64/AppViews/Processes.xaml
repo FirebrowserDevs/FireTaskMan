@@ -23,10 +23,14 @@
                 FireTaskMan
             </TextBlock>
             <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/cpu.png"/>
-            <TextBlock x:ConnectionId='2'                          x:Name="CpuUsage" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <TextBlock x:ConnectionId='2'                          x:Name="CpuUsage" VerticalAlignment="Center" HorizontalAlignment="Center" Text="CPU Usage: 0.00%"/>
             <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/mem.png"/>
-            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">
+            <TextBlock x:ConnectionId='3' x:Name="RmUsage" Margin="2,0,0,0" VerticalAlignment="Center">
                 Ram Usage: 100%
+            </TextBlock>
+            <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/gpu.png"/>
+            <TextBlock x:ConnectionId='4' FlowDirection="LeftToRight" x:Name="GpUsage" Margin="2,0,0,0" VerticalAlignment="Center" HorizontalTextAlignment="Center">
+               Gpu: 
             </TextBlock>
         </StackPanel>
         

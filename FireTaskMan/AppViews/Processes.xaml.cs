@@ -19,6 +19,8 @@ using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using System.Threading;
+using System.Runtime.InteropServices;
+using FireTaskMan.Helpers;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -34,6 +36,7 @@ namespace FireTaskMan.AppViews
         public Processes()
         {
             this.InitializeComponent();
+            GpuNames();
         }
 
         public void RunStartDelay()
@@ -51,10 +54,18 @@ namespace FireTaskMan.AppViews
             }
         }
 
+    
         private async void CpuUsage_Loaded(object sender, RoutedEventArgs e)
         {
-            await Task.Delay(125);
+            await Task.Delay(1);
             RunStartDelay();
+        }
+
+
+        public async Task GpuNames()
+        {
+            string gpuBrandNames = await SysInfo.GetGpuBrandNamesAsync();
+            GpUsage.Text = gpuBrandNames;
         }
     }
 }

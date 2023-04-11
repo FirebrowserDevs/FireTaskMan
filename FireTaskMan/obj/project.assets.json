@@ -115,6 +115,22 @@
           }
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Configuration.ConfigurationManager/8.0.0-preview.2.23128.3": {
         "type": "package",
         "dependencies": {
@@ -177,6 +193,31 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Security.Cryptography.ProtectedData/8.0.0-preview.2.23128.3": {
@@ -334,6 +375,22 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Configuration.ConfigurationManager/8.0.0-preview.2.23128.3": {
         "type": "package",
         "dependencies": {
@@ -385,6 +442,25 @@
         },
         "runtime": {
           "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
             "related": ".xml"
           }
         },
@@ -541,6 +617,22 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Configuration.ConfigurationManager/8.0.0-preview.2.23128.3": {
         "type": "package",
         "dependencies": {
@@ -592,6 +684,25 @@
         },
         "runtime": {
           "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
             "related": ".xml"
           }
         },
@@ -748,6 +859,22 @@
           "buildTransitive/Microsoft.WindowsAppSDK.targets": {}
         }
       },
+      "System.CodeDom/7.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.CodeDom.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Configuration.ConfigurationManager/8.0.0-preview.2.23128.3": {
         "type": "package",
         "dependencies": {
@@ -799,6 +926,25 @@
         },
         "runtime": {
           "lib/net6.0/System.Drawing.Common.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Management/7.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.CodeDom": "7.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Management.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "runtimes/win/lib/net6.0/System.Management.dll": {
             "related": ".xml"
           }
         },
@@ -1732,6 +1878,33 @@
         "tools/x86/GenXbf.dll"
       ]
     },
+    "System.CodeDom/7.0.0": {
+      "sha512": "GLltyqEsE5/3IE+zYRP5sNa1l44qKl9v+bfdMcwg+M9qnQf47wK3H0SUR/T+3N4JEQXF3vV4CSuuo0rsg+nq2A==",
+      "type": "package",
+      "path": "system.codedom/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.CodeDom.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.CodeDom.targets",
+        "lib/net462/System.CodeDom.dll",
+        "lib/net462/System.CodeDom.xml",
+        "lib/net6.0/System.CodeDom.dll",
+        "lib/net6.0/System.CodeDom.xml",
+        "lib/net7.0/System.CodeDom.dll",
+        "lib/net7.0/System.CodeDom.xml",
+        "lib/netstandard2.0/System.CodeDom.dll",
+        "lib/netstandard2.0/System.CodeDom.xml",
+        "system.codedom.7.0.0.nupkg.sha512",
+        "system.codedom.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Configuration.ConfigurationManager/8.0.0-preview.2.23128.3": {
       "sha512": "JGzbYVZrGWUSLXUqarPyjkmJpRU2xThmEKZXTzacpKG8pzF8+GNwEKvNkhCRtu8D3+cp0nM677HUoQ9v8E3vqw==",
       "type": "package",
@@ -1832,6 +2005,34 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Management/7.0.1": {
+      "sha512": "pHg4hGr/dn5wYdJ+kolMY4gkCIzFDRj/HFqoPq7e5h7OGii6BCBmS2/+ysC2SSoB5WvIDS29DMM5DowxxSY/oA==",
+      "type": "package",
+      "path": "system.management/7.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Management.targets",
+        "lib/net462/_._",
+        "lib/net6.0/System.Management.dll",
+        "lib/net6.0/System.Management.xml",
+        "lib/net7.0/System.Management.dll",
+        "lib/net7.0/System.Management.xml",
+        "lib/netstandard2.0/System.Management.dll",
+        "lib/netstandard2.0/System.Management.xml",
+        "runtimes/win/lib/net6.0/System.Management.dll",
+        "runtimes/win/lib/net6.0/System.Management.xml",
+        "runtimes/win/lib/net7.0/System.Management.dll",
+        "runtimes/win/lib/net7.0/System.Management.xml",
+        "system.management.7.0.1.nupkg.sha512",
+        "system.management.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Security.Cryptography.ProtectedData/8.0.0-preview.2.23128.3": {
       "sha512": "MUKSO1s8n5VJUXIsbAIEjH2YVcFLXJ4A48GSdGhB8kdjqxBtpEqSa2RdAp5r98alekcBAJ269PIK4QtV3aTiHA==",
       "type": "package",
@@ -1928,7 +2129,8 @@
     "net6.0-windows10.0.19041": [
       "Microsoft.Windows.SDK.BuildTools >= 10.0.25336-preview",
       "Microsoft.WindowsAppSDK >= 1.3.230228005-preview1",
-      "System.Diagnostics.PerformanceCounter >= 8.0.0-preview.2.23128.3"
+      "System.Diagnostics.PerformanceCounter >= 8.0.0-preview.2.23128.3",
+      "System.Management >= 7.0.1"
     ]
   },
   "packageFolders": {
@@ -1938,11 +2140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\FireTaskMan.csproj",
+      "projectUniqueName": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\FireTaskMan.csproj",
       "projectName": "FireTaskMan",
-      "projectPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\FireTaskMan.csproj",
+      "projectPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\FireTaskMan.csproj",
       "packagesPath": "C:\\Users\\jpjm-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\FireTaskMan\\obj\\",
+      "outputPath": "C:\\Users\\jpjm-\\source\\repos\\FireTaskMan\\Github\\FireTaskMan\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1987,6 +2189,10 @@
           "System.Diagnostics.PerformanceCounter": {
             "target": "Package",
             "version": "[8.0.0-preview.2.23128.3, )"
+          },
+          "System.Management": {
+            "target": "Package",
+            "version": "[7.0.1, )"
           }
         },
         "imports": [
