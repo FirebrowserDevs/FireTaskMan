@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Source>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</Source>
+    <SmallTileSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman-transformed.png</SmallTileSource>
+    <MediumTileSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</MediumTileSource>
+    <WideTileSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</WideTileSource>
+    <LargeTileSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</LargeTileSource>
+    <AppIconSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</AppIconSource>
+    <SplashScreenSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\jpjm-\OneDrive\Bureaublad\firetaskman.png</PackageLogoSource>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="App.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <Page Update="AppViews\Processes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Controls\ProcessControl.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <None Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

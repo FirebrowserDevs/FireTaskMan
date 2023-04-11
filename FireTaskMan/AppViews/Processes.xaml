@@ -1,0 +1,34 @@
+<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Page
+    x:Class="FireTaskMan.AppViews.Processes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FireTaskMan.AppViews"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Transparent"
+    >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <ImageIcon Width="50" Height="50" Source="ms-appx:///Assets/SmallTile.scale-400.png"/>
+            <TextBlock VerticalAlignment="Center">
+                FireTaskMan
+            </TextBlock>
+            <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/cpu.png"/>
+            <TextBlock Loaded="CpuUsage_Loaded" x:Name="CpuUsage" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/mem.png"/>
+            <TextBlock Margin="2,0,0,0" VerticalAlignment="Center">
+                Ram Usage: 100%
+            </TextBlock>
+        </StackPanel>
+        
+    </Grid>
+</Page>

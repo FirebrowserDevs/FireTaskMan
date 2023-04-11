@@ -1,0 +1,1 @@
+C:\Users\jpjm-\source\repos\FireTaskMan\FireTaskMan\FireTaskMan.csproj;x64

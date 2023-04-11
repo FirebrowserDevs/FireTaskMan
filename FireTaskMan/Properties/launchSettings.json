@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "FireTaskMan (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "FireTaskMan (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
