@@ -21,6 +21,8 @@ using Windows.Foundation.Collections;
 using System.Threading;
 using System.Runtime.InteropServices;
 using FireTaskMan.Helpers;
+using System.Collections.ObjectModel;
+using FireTaskMan.Controls;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -32,13 +34,17 @@ namespace FireTaskMan.AppViews
     /// </summary>
     public sealed partial class Processes : Page
     {
+     
         private PerformanceCounter cpuUsageCounter;
         public Processes()
         {
             this.InitializeComponent();
             GpuNames();
+            ProcessesListView.Items.Add(new ProcessControl());
+            ProcessesListView.Items.Add(new ProcessControl());
         }
 
+      
         public void RunStartDelay()
         {
             cpuUsageCounter = new PerformanceCounter("Processor", "% Processor Time", "_Total");

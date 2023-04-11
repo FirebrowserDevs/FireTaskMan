@@ -1,7 +1,7 @@
 ﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
 <!-- Licensed under the MIT License. -->
 
-<UserControl x:ConnectionId='1'
+<UserControl
     x:Class="FireTaskMan.Controls.ProcessControl"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -10,21 +10,23 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Margin="8">
+    <Grid Margin="0,0,0,0">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
             <ColumnDefinition Width="Auto" />
         </Grid.ColumnDefinitions>
 
-        <TextBlock x:ConnectionId='2'                              FontSize="20" FontWeight="Bold" />
+        <ImageIcon VerticalAlignment="Center" HorizontalAlignment="Left" Grid.Column="0" Width="32" Height="32" Source="ms-appx:///Icons/processwindow.png"/>
+        <TextBlock Text="Test" FontSize="20" FontWeight="Bold" VerticalAlignment="Stretch" Margin="45,8,0,0"/>
 
         <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Right">
-            <ComboBox x:ConnectionId='3' Name="PriorityComboBox"                                         
-                                                                            
+            <ComboBox x:ConnectionId='2' Name="PriorityComboBox"
                                                                           
                       Width="100" Margin="8" />
 
-            <Button x:ConnectionId='4' Content="Kill"                      Margin="8" />
+            <Button x:ConnectionId='3'                      Margin="8" Background="Transparent" BorderBrush="Transparent">
+                <Image Width="20" Height="20" Source="ms-appx:///Icons/kill.png"/>
+            </Button>
         </StackPanel>
     </Grid>
 </UserControl>

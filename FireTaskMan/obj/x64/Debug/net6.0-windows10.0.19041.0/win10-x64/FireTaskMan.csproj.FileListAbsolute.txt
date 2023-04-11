@@ -609,3 +609,5 @@ C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\obj\x64\Debug\net6.0-
 C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Icons\gpu.png
 C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\System.CodeDom.dll
 C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\System.Management.dll
+C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Icons\processwindow.png
+C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\Icons\kill.png

@@ -31,7 +31,7 @@ namespace FireTaskMan
     /// </summary>
     public sealed partial class MainWindow : Window
     {
-        private ObservableCollection<ProcessInfo> processes;
+    
         private AppWindow m_AppWindow;
         public static MainWindow Current;
         //this are values dont need to by exactly the same

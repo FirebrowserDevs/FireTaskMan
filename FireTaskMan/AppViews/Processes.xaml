@@ -9,6 +9,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
+    xmlns:controls="using:FireTaskMan.Controls"
     Background="Transparent"
     >
 
@@ -18,10 +19,6 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <ImageIcon Width="50" Height="50" Source="ms-appx:///Assets/SmallTile.scale-400.png"/>
-            <TextBlock VerticalAlignment="Center">
-                FireTaskMan
-            </TextBlock>
             <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/cpu.png"/>
             <TextBlock Loaded="CpuUsage_Loaded" x:Name="CpuUsage" VerticalAlignment="Center" HorizontalAlignment="Center" Text="CPU Usage: 0.00%"/>
             <ImageIcon Margin="12,0,0,0" Width="30" Height="30" VerticalAlignment="Center" Source="ms-appx:///Icons/mem.png"/>
@@ -33,6 +30,12 @@
                Gpu: 
             </TextBlock>
         </StackPanel>
-        
+        <ListView x:Name="ProcessesListView" Margin="0,5,0,0" Grid.Row="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <controls:ProcessControl/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
     </Grid>
 </Page>

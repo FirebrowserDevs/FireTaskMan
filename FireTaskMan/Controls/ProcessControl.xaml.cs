@@ -29,14 +29,7 @@ namespace FireTaskMan.Controls
             this.InitializeComponent();
         }
 
-        public static readonly DependencyProperty ProcessProperty =
-                  DependencyProperty.Register("Process", typeof(ProcessInfo), typeof(ProcessControl), null);
-
-        public ProcessInfo Process
-        {
-            get { return (ProcessInfo)GetValue(ProcessProperty); }
-            set { SetValue(ProcessProperty, value); }
-        }
+      
 
         private void PriorityComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -45,7 +38,7 @@ namespace FireTaskMan.Controls
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
     }
 }

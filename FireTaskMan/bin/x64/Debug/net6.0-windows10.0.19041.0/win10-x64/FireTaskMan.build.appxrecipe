@@ -43,8 +43,14 @@
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\Icons\gpu.png">
       <PackagePath>Icons\gpu.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\Icons\kill.png">
+      <PackagePath>Icons\kill.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\Icons\mem.png">
       <PackagePath>Icons\mem.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\Icons\processwindow.png">
+      <PackagePath>Icons\processwindow.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FireTaskMan.deps.json">
       <PackagePath>FireTaskMan.deps.json</PackagePath>

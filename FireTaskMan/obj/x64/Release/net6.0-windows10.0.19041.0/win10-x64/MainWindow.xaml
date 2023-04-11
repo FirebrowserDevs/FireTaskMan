@@ -1,0 +1,59 @@
+﻿<!-- Copyright (c) Microsoft Corporation and Contributors. -->
+<!-- Licensed under the MIT License. -->
+
+<Window
+    x:Class="FireTaskMan.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:FireTaskMan"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:FireTaskMan.Controls"
+    mc:Ignorable="d"
+    Title="FireTaskMan"
+    >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid x:ConnectionId='2' x:Name="AppTitleBar" Background="Transparent">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition x:ConnectionId='5' x:Name="LeftPaddingColumn" Width="0"/>
+                <ColumnDefinition/>
+                <ColumnDefinition x:ConnectionId='6' x:Name="RightPaddingColumn" Width="0"/>
+            </Grid.ColumnDefinitions>
+            <Image Source="Assets/StoreLogo.png" 
+       Grid.Column="1"
+       HorizontalAlignment="Left"
+       Width="16" Height="16"
+       Margin="8,0,0,0"/>
+            <TextBlock x:ConnectionId='7' x:Name="AppTitleTextBlock"
+           Text="FireTaskMan" 
+           Style="{StaticResource CaptionTextBlockStyle}" 
+           Grid.Column="1"
+           VerticalAlignment="Center"
+           Margin="28,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.ColumnSpan="1">
+            <NavigationView x:ConnectionId='3' x:Name="Nav" Background="Transparent" IsSettingsVisible="False" IsBackButtonVisible="Collapsed"                                SelectedItem="Processes">
+                <NavigationView.MenuItems>
+                    <NavigationViewItem Tag="Processes" Content="Processes">
+                        <NavigationViewItem.Icon>
+                            <ImageIcon Source="ms-appx:///Assets/process.png"/>
+                        </NavigationViewItem.Icon>
+                    </NavigationViewItem>
+                </NavigationView.MenuItems>
+                <ScrollViewer>
+                    <Frame x:ConnectionId='4' x:Name="ContentFrame" Padding="12,0,12,24"  IsTabStop="True"
+                  />
+                </ScrollViewer>
+            </NavigationView>
+
+        </Grid>
+    </Grid>
+</Window>
+
