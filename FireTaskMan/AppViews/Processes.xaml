@@ -30,7 +30,7 @@
                Gpu: 
             </TextBlock>
         </StackPanel>
-        <ListView x:Name="ProcessesListView" Margin="0,5,0,0" Grid.Row="2">
+        <ListView x:Name="ProcessesListView" CacheMode="BitmapCache" Margin="0,5,0,0" Grid.Row="2">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <controls:ProcessControl/>

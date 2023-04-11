@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-04-11T15:14:10.744</Modified>
+      <Modified>2023-04-11T16:43:27.174</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-04-11T15:14:10.445</Modified>
+      <Modified>2023-04-11T16:43:26.908</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FireTaskMan.runtimeconfig.json">
       <PackagePath>FireTaskMan.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\bin\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\FireTaskMan.dll">
       <PackagePath>FireTaskMan.dll</PackagePath>
-      <Modified>2023-04-11T15:14:10.313</Modified>
+      <Modified>2023-04-11T16:43:26.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\obj\x64\Debug\net6.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>FireTaskMan.exe</PackagePath>
-      <Modified>2023-04-11T15:14:10.320</Modified>
+      <Modified>2023-04-11T16:43:26.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\jpjm-\source\repos\FireTaskMan\Github\FireTaskMan\Icons\cpu.png">
       <PackagePath>Icons\cpu.png</PackagePath>

@@ -38,6 +38,8 @@ namespace FireTaskMan.Helpers
                 return;
             }
 
+    
+
             if (m_dispactqueuController == null)
             {
                 DispatcherQueueOptions options;
@@ -45,6 +47,7 @@ namespace FireTaskMan.Helpers
                 options.dwSize = Marshal.SizeOf(typeof(DispatcherQueueOptions));
                 options.threadType = 2;
                 options.apartmentType = 2;
+          
 
                 //this creates the handler
                 CreateDispatcherQueueController(options, ref m_dispactqueuController);

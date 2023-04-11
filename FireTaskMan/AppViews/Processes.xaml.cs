@@ -23,6 +23,7 @@ using System.Runtime.InteropServices;
 using FireTaskMan.Helpers;
 using System.Collections.ObjectModel;
 using FireTaskMan.Controls;
+using Windows.UI.Core;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -40,10 +41,14 @@ namespace FireTaskMan.AppViews
         {
             this.InitializeComponent();
             GpuNames();
-            ProcessesListView.Items.Add(new ProcessControl());
-            ProcessesListView.Items.Add(new ProcessControl());
+          
         }
 
+        public async void rundelay()
+        {
+            await Task.Delay(1);
+            PopulateProcessList();
+        }
       
         public void RunStartDelay()
         {
@@ -65,6 +70,30 @@ namespace FireTaskMan.AppViews
         {
             await Task.Delay(1);
             RunStartDelay();
+            // Update the UI on the UI thread
+      
+                // Perform some work that takes a long time, but doesn't block the UI thread
+                rundelay();
+           
+        }
+
+        private async void PopulateProcessList()
+        {
+            ProcessesListView = (ListView)FindName("ProcessesListView");
+
+            // Get a list of all running processes with their process name, ID, and base priority
+            var processes = Process.GetProcesses()
+                                   .Select(p => new ProcessInfo
+                                   {
+                                       Name = p.ProcessName,
+                                       Id = p.Id,
+                                       Priority = p.BasePriority.ToString()
+                                   })
+                                   .ToList();
+
+            // Set the ItemsSource of the ListView to the list of processes
+            ProcessesListView.ItemsSource = processes;
+
         }
 
 

@@ -11,6 +11,8 @@ using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -24,21 +26,41 @@ namespace FireTaskMan.Controls
 {
     public sealed partial class ProcessControl : UserControl
     {
+
         public ProcessControl()
         {
             this.InitializeComponent();
+            ProcessInfo pr = new ProcessInfo();
+            pr.Priority = "Normal";        
         }
 
-      
+        public List<ComboBoxItem> PriorityItems => new List<ComboBoxItem>
+        {
+              new ComboBoxItem { Content = "Normal" },
+              new ComboBoxItem { Content = "Low" },
+              new ComboBoxItem { Content = "High" }
+        };
+
+        private static readonly Dictionary<string, int> PriorityIndices = new Dictionary<string, int>
+        {
+          { "Normal", 0 },
+          { "Low", 1 },
+          { "High", 2 }
+        };
+
+        // ...
+
+    
 
         private void PriorityComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Kill_Click(object sender, RoutedEventArgs e)
         {
-           
+
         }
+    
     }
 }
